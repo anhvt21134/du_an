@@ -1,0 +1,31 @@
+<form (ngSubmit)="onHandleSubmit()" [formGroup]="userForm">
+    <div class="container">
+      <h1>Đăng kí</h1>
+      <hr>
+  
+      <label for="name"><b>Tên</b></label>
+      <input type="text" placeholder="Nhập tên" name="name" id="email" formControlName="name">
+      <div *ngIf="userForm.controls['name'].invalid && (userForm.controls['name'].dirty || userForm.controls['name'].touched)"
+           class="error-message">Tên không hợp lệ</div>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Nhập email" name="email" id="email" formControlName="email">
+      <div *ngIf="userForm.controls['email'].invalid && (userForm.controls['email'].dirty || userForm.controls['email'].touched)"
+           class="error-message">Email không hợp lệ</div>
+  
+      <label for="psw"><b>Mật khẩu</b></label>
+      <input type="password" placeholder="Nhập mật khẩu" name="password" id="psw" formControlName="password">
+      <div *ngIf="userForm.controls['password'].invalid && (userForm.controls['password'].dirty || userForm.controls['password'].touched)"
+           class="error-message">Mật khẩu không hợp lệ</div>
+  
+      <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+      <input type="password" placeholder="Nhập mật khẩu" name="confirmPassword" id="psw-repeat" formControlName="confirmPassword">
+      <div *ngIf="userForm.controls['confirmPassword'].invalid && (userForm.controls['confirmPassword'].dirty || userForm.controls['confirmPassword'].touched)"
+           class="error-message">Nhập lại mật khẩu không đúng</div>
+      <hr>
+  
+      <p>Bạn đã có tài khoản <a href="/signin">Đăng nhập</a>.</p>
+      <button type="submit" class="registerbtn">Đăng kí</button>
+    </div>
+  </form>
+  

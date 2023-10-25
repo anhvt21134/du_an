@@ -1,0 +1,33 @@
+
+  <form (ngSubmit)="onHandleSignin()" [formGroup]="userForm">
+    <div class="container">
+      <h1>Đăng nhập</h1>
+      <hr>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" formControlName="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" formControlName="password" required>
+  
+      <div *ngIf="isSubmitted && userForm.get('email')?.invalid && userForm.get('email')?.touched">
+        <div *ngIf="userForm.get('email')?.errors?.['required']">Email is required.</div>
+        <div *ngIf="userForm.get('email')?.errors?.['email']">Invalid email format.</div>
+      </div>
+  
+      <div *ngIf="isSubmitted && userForm.get('password')?.invalid && userForm.get('password')?.touched">
+        <div *ngIf="userForm.get('password')?.errors?.['required']">Password is required.</div>
+      </div>
+  
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  
+      <hr>
+  
+      <button type="submit" class="registerbtn">Đăng nhập</button>
+    </div>
+    
+    <div class="container signin">
+      <p>Bạn chưa có tài khoản? <a href="#">Đăng ký</a>.</p>
+    </div>
+  </form>
+  

@@ -1,0 +1,28 @@
+<h1 style="text-align: center; margin-bottom: 20px">Danh mục sản phẩm</h1>
+<a routerLink="add">
+  <button style="margin-bottom: 20px" type="submit" class="btn btn-primary">
+    Thêm danh mục
+  </button>
+</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Tên danh mục</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let categories of category; index as i">
+      <td>{{ i + 1 }}</td>
+      <td>{{ categories.name }}</td>
+
+      <td>
+        <button class="btn btn-danger" style="margin-right: 10px;" (click)="removeItem(categories._id)!">
+          Xóa
+        </button>
+        <a routerLink="{{ categories._id }}/edit"> <button class="btn btn-primary">Sửa</button> </a>
+      </td>
+    </tr>
+  </tbody>
+</table>

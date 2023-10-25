@@ -1,0 +1,9 @@
+<h1 style="text-align: center">Thêm danh mục</h1>
+
+<form (ngSubmit)="onHandleSubmit()" [formGroup]="categoryForm"> 
+  <div class="form-group">
+    <label for="exampleInputEmail1">Tên danh mục</label>
+    <input type="text" formControlName="name" class="form-control" id="exampleInputEmail1" />
+  </div>
+  <button type="submit" class="btn btn-primary" [disabled]="!categoryForm.valid">Thêm sản phẩm</button>
+</form>

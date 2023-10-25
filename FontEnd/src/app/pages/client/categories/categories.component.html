@@ -1,0 +1,74 @@
+<div class="super_container" style="margin-top: 45px;">
+
+    <div class="fs_menu_overlay"></div>
+
+    <!-- Hamburger Menu -->
+
+
+
+    <div class="container product_section_container">
+        <div class="row">
+            <div class="col-xl-3 product_section clearfix">
+                <div class="sidebar">
+                    <div class="sidebar_section">
+                        <div class="sidebar_title">
+                            <h5>Danh mục sản phẩm</h5>
+                        </div>
+                        <ul class="sidebar_categories">
+
+
+                            <li *ngFor="let category of categories ; index as i">
+                                <a routerLink="/category/{{category._id}}">{{category.name}}</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <!-- Price Range Filtering -->
+
+
+                </div>
+
+                <!-- Main Content -->
+
+
+            </div>
+            <div class="col-xl-9 main_content">
+                <div class="row">
+                    <div *ngFor="let product of products; index as i" class="col-xl-3">
+                        <div class="product-grid"
+                            data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'
+                            style="width: 100% !important;">
+                            <div class="product-item " style="width: 100% !important;height: 400px;">
+                                <div class="product discount product_filter">
+                                    <div class="product discount product_filter">
+                                        <div class="product_image">
+                                            <a href="product/{{ product._id }}">
+                                                <img [src]="product.image" alt="" style="width: 100%;">
+                                            </a>
+                                        </div>
+
+                                        <div class="product_info">
+                                            <h6 class="product_name"><a href="product/{{ product._id }}">{{ product.name
+                                                    }}</a>
+                                            </h6>
+                                            <div class="product_price">{{ product.price }} đ</div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="red_button add_to_cart_button" style="margin-top: 18px;"><a
+                                        href="product/{{ product._id }}">chi tiết sản
+                                        phẩm</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
