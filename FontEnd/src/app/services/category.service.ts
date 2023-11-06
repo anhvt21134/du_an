@@ -32,4 +32,9 @@ export class CategoryService {
       category
     );
   }
+  getToken() {
+    // Lấy token từ nơi lưu trữ (ví dụ: localStorage)
+    const token = JSON.parse(localStorage.getItem('user')!)?.accessToken || null;
+    return token;
+  }
 }

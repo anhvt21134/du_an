@@ -14,11 +14,13 @@ import { CategoriesComponent } from './pages/client/categories/categories.compon
 import { SigninComponent } from './pages/client/signin/signin.component';
 import { RegisterComponent } from './pages/client/register/register.component';
 import { AuthGuard } from './auth.guard';
-
+import { CartComponent } from './pages/cart/cart.component';
+import { ListOrderComponent } from './pages/admin/order/list-order/list-order.component';
+import { DetailOrderComponent } from './pages/detail-order/detail-order.component';
 const routes: Routes = [
   {
     path: 'admin',
-    component: AdminLayoutComponent,canActivate: [AuthGuard],
+    component: AdminLayoutComponent, canActivate: [AuthGuard],
     children: [
       { path: '', redirectTo: 'product', pathMatch: 'full' },
       { path: 'product', component: ProductListComponent },
@@ -27,6 +29,7 @@ const routes: Routes = [
       { path: 'category', component: CategoryListComponent },
       { path: 'category/add', component: CategoryAddComponent },
       { path: 'category/:id/edit', component: CategoryEditComponent },
+      { path: "order", component: ListOrderComponent },
     ],
   },
   {
@@ -39,6 +42,8 @@ const routes: Routes = [
       { path: 'product/:id', component: ProductComponent },
       { path: 'signin', component: SigninComponent },
       { path: 'signup', component: RegisterComponent },
+      { path: "cart", component: CartComponent },
+      { path: "detailorder", component: DetailOrderComponent },
     ],
   },
 ];
@@ -47,4 +52,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

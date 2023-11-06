@@ -25,6 +25,9 @@ import { RegisterComponent } from './pages/client/register/register.component';
 import { UserListComponent } from './pages/admin/user-list/user-list.component';
 import { CategoryEditComponent } from './pages/admin/category-edit/category-edit.component';
 import { AuthInterceptor } from './auth.interceptor';
+import { CartComponent } from './pages/cart/cart.component';
+import { DetailOrderComponent } from './pages/detail-order/detail-order.component';
+import { ListOrderComponent } from './pages/admin/order/list-order/list-order.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,9 @@ import { AuthInterceptor } from './auth.interceptor';
     RegisterComponent,
     UserListComponent,
     CategoryEditComponent,
+    CartComponent,
+    DetailOrderComponent,
+    ListOrderComponent,
   ],
   imports: [
 

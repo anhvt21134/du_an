@@ -1,0 +1,58 @@
+<div class="cart">
+
+    <h1 class="text-center mt-5">Giỏ hàng</h1>
+
+    <div class="mt-5" *ngIf="carts.length">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Tên sản phẩm</th>
+                    <th scope="col">Ảnh</th>
+                    <th scope="col">Giá</th>
+                    <th scope="col">Số lượng</th>
+                    <th scope="col">Thành tiền</th>
+                    <th scope="col">Tùy chọn</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cart of carts ; let i = index">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{cart.name}}</td>
+                    <td><img style="width: 150px; height: auto;" src="{{cart.image}}" alt=""></td>
+                    <td>{{cart.price}}</td>
+                    <td>
+                        <button (click)="giam(i,cart.quantity)">-</button>
+                        <input class="input-number" type="number" [value]="cart.quantity"
+                            (change)="updateQuantity(i, $event)">
+                        <button (click)="tang(i,cart.quantity)">+</button>
+                    </td>
+                    <td>{{subtotal(cart)}}</td>
+                    <td><button type="button" class="btn btn-outline-danger" (click)="removeCart(i)">Xóa</button></td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+        <div>
+            <h3 class="d-flex justify-content-center">Tổng số lượng:{{totalQuantity}}</h3><br>
+            <h3 class="d-flex justify-content-center">Tổng thành tiền:{{totalPrice}} VNĐ</h3>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <a class="btn btn-outline-success mt-3 " href="#" routerLink="/" role="button">Tiếp tục mua</a>
+            <button type="button" class="btn btn-outline-danger mt-3 ml-2" (click)="removeCartAll()">Xóa tất cả</button>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <button type="button" class="btn btn-outline-danger mt-3 ml-2" (click)="buyNow()"
+                routerLink="/detailorder">Mua</button>
+        </div>
+
+    </div>
+
+    <div *ngIf="carts.length == 0">
+        <h1 class="warning-error d-flex justify-content-center">Không có sản phẩm !!!</h1>
+        <a class="btn btn-outline-success mt-3 d-flex justify-content-center p-0" routerLink="/" role="button">Quay
+            lại shop mua</a>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+<div style="margin-top: 400px;">
+    <h1>Trang chi tiết đơn hang</h1>
+</div>
+<div *ngIf="detailOrder.length" class="orderbody">
+    <h1>Trang chi tiết đơn hàng</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Đơn hàng của bạn</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive" id="proTeamScroll" tabindex="1"
+                            style="height: 400px; overflow: hidden; outline: none;">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Sản phẩm</th>
+                                        <th>Ngày đặt</th>
+                                        <th>Số lượng</th>
+                                        <th>Tổng tiền</th>
+                                        <th>Trạng thái</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let order of detailOrder ; let i = index">
+                                        <td>
+                                            <div class="badge-outline col-red">{{i + 1}}</div>
+                                        </td>
+
+                                        <td>
+                                            <!-- <h6 class="mb-0 font-13">{{order.idProduct.name}}</h6> -->
+                                            <!-- <p class="m-0 font-12">
+                                                Assigned to<span class="col-green font-weight-bold">{{order.idProduct.name}}</span>
+                                            </p> -->
+                                            <div class="badge-outline col-red"
+                                                *ngFor=" let names of order.idProduct ; let is = index">{{is + 1}}:
+                                                {{names.name}}</div>
+                                        </td>
+                                        <td>
+                                            <div class="badge-outline col-red">{{order.days}}</div>
+                                        </td>
+                                        <td class="text-truncate">
+                                            <div class="badge-outline col-red">{{order.quantyti}}</div>
+                                        </td>
+                                        <td>
+                                            <div class="badge-outline col-red">{{order.total}} VNĐ</div>
+                                        </td>
+                                        <td class="align-middle">
+                                            <div class="progress-text">{{order.status}}</div>
+
+                                        </td>
+                                        <td>
+                                            <button>Hủy đơn</button>
+                                        </td>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="detailOrder.length === 0">
+    <h1>Bạn đéo có đơn hàng nào</h1>
+    <a routerLink="/"> Quay lại để mua hàng</a>
+</div>

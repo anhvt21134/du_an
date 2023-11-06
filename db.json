@@ -1,0 +1,759 @@
+{
+    "users": [
+        {
+            "_id": {
+                "$oid": "6482a4bb61d613a005ab0a8f"
+            },
+            "name": "Thieuz",
+            "email": "thieu12hn@gmail.com",
+            "password": "$2a$10$sLQ6RdTEjdiHHGZKaMfUu.gpjNnwgUmkRm3/mXhdQIPH9grKeP6TO",
+            "role": "admin",
+            "__v": 0
+        },
+        {
+            "_id": {
+                "$oid": "6530c03f4970d6e65b7a3cd8"
+            },
+            "name": "Tuấn",
+            "email": "anhvtph21134@fpt.edu.vn",
+            "password": "$2a$10$sv5NMqa9hXqaoOlXcv6Ou.Bt656OCG9Tgqk/jr8BN.oFOZjW14Lzi",
+            "role": "admin",
+            "__v": 0
+        },
+        {
+            "_id": {
+                "$oid": "6530c198139ae1395ceb2c6b"
+            },
+            "name": "tuananh",
+            "email": "vtuananh950@gmail.com",
+            "password": "123456789",
+            "role": "admin",
+            "__v": 0
+        }
+    ],
+    "products": [
+        {
+            "_id": {
+                "$oid": "6486dee1005ebb3078f46a77"
+            },
+            "name": "13 Nguyên Tắc Nghĩ Giàu Làm Giàu - Think And Grow Rich",
+            "author": "Napoleon Hill",
+            "price": 97300,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686560484/ECMA/hrixsx84ijcu2nwhrnja.jpg",
+            "quantity": 92,
+            "description": "Hướng dẫn tư duy thành công với 13 nguyên tắc mạnh mẽ, giúp bạn khai phá tiềm năng và tạo ra sự giàu có trong cuộc sống.",
+            "categoryId": {
+                "$oid": "64848cd0280bec1eab040509"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:01:21.101Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T15:12:10.843Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486df63005ebb3078f46a80"
+            },
+            "name": "30 Chủ Đề Từ Vựng Tiếng Anh",
+            "author": "Trang Anh",
+            "price": 161500,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686560613/ECMA/qxk92uua5eskezk26oxm.jpg",
+            "quantity": 87,
+            "description": "Tài liệu hữu ích giúp mở rộng vốn từ vựng, từ chủ đề hàng ngày đến các lĩnh vực chuyên sâu, giúp bạn tự tin giao tiếp và hiểu rõ hơn văn hóa và ngôn ngữ Anh",
+            "categoryId": {
+                "$oid": "64848f78280bec1eab040515"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:03:31.588Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:03:31.588Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486dfe5005ebb3078f46a87"
+            },
+            "name": "48 Nguyên Tắc Chủ Chốt Của Quyền Lực",
+            "author": "Robert Greene",
+            "price": 150000,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686560742/ECMA/eddlmh7egrpjatpeuiyv.jpg",
+            "quantity": 60,
+            "description": "Hướng dẫn khám phá bí mật về quyền lực và tác động của nó trong mọi lĩnh vực, từ lãnh đạo, đàm phán đến thành công cá nhân.",
+            "categoryId": {
+                "$oid": "64848da0280bec1eab04050f"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:05:41.124Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:05:41.124Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e04d005ebb3078f46a8e"
+            },
+            "name": "999 Lá Thư Gửi Cho Chính Mình - Những Lá Thư Ấn Tượng Nhất",
+            "author": "Miêu Công Tử",
+            "price": 74250,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686560848/ECMA/vgzm5tflbpemo2jmpdhc.jpg",
+            "quantity": 61,
+            "description": "Bộ sưu tập những lá thư sâu sắc, ý nghĩa, gợi mở suy nghĩ và truyền cảm hứng để khám phá bản thân và tạo ra cuộc sống đáng nhớ.",
+            "categoryId": {
+                "$oid": "64848ab9280bec1eab0404ff"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:07:25.486Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:07:25.486Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e0d6005ebb3078f46a95"
+            },
+            "name": "Bách Khoa Tri Thức Về Khám Phá Thế Giới Cho Trẻ Em - Thiên Văn Học",
+            "author": "Rachel Firth",
+            "price": 31500,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686560983/ECMA/tskgnydbb0q7cct3bhb4.jpg",
+            "quantity": 39,
+            "description": "Mở cánh cửa tò mò, đưa trẻ em vào hành trình tuyệt vời khám phá vũ trụ, từ hệ mặt trời đến các thiên hà, tạo nền tảng vững chắc về thiên văn học.\"",
+            "categoryId": {
+                "$oid": "647f07afda34ec152026462f"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:09:42.687Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:09:42.687Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e1a4005ebb3078f46a9c"
+            },
+            "name": "Bí Mật Tiền Bạc Của Giới Siêu Giàu - Lằn Ranh Mong Manh Giữa Giàu Và Siêu Giàu",
+            "author": "Paul Sullivan",
+            "price": 91800,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686561190/ECMA/yvtoulv4mcd0mwasg3vm.jpg\n",
+            "quantity": 45,
+            "description": "Sách phân tích sâu sắc về cách xây dựng và bảo vệ tài sản, tiết lộ bí quyết thành công và khám phá sự khác biệt giữa giàu có và siêu giàu.",
+            "categoryId": {
+                "$oid": "64848cd0280bec1eab040509"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:13:08.349Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:13:08.349Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e206005ebb3078f46aa3"
+            },
+            "name": "Cân Bằng Cảm Xúc, Cả Lúc Bão Giông",
+            "author": "Richard Nicholls",
+            "price": 78750,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686561288/ECMA/bojvtycivgmx88fs3qeg.jpg",
+            "quantity": 14,
+            "description": "Hướng dẫn quý giá giúp duy trì tinh thần và cân bằng trong cuộc sống đầy thách thức, giúp đối mặt với khó khăn và xây dựng sự chắc chắn tâm lý.",
+            "categoryId": {
+                "$oid": "64848da0280bec1eab04050f"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:14:46.388Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:14:46.388Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e25f005ebb3078f46aaa"
+            },
+            "name": "Cây Cam Ngọt Của Tôi",
+            "author": "José Mauro de Vasconcelos",
+            "price": 54000,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686561376/ECMA/ihswkj2zsxxhy23eepdc.jpg",
+            "quantity": 34,
+            "description": "Một câu chuyện sâu sắc về tình yêu, hy vọng và sức mạnh của sự vươn lên trong cuộc sống, tạo nên những giây phút đẹp và ý nghĩa.",
+            "categoryId": {
+                "$oid": "64848ab9280bec1eab0404ff"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:16:15.732Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:16:15.732Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e3b2005ebb3078f46ab5"
+            },
+            "name": "Cuộc Đời Kỳ Lạ Của Nikola Tesla",
+            "author": "Nikola Tesla",
+            "price": 72250,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686561716/ECMA/accf0ectg6w2nmzk9tkq.jpg",
+            "quantity": 65,
+            "description": "Bộ sưu tập tình tiết đầy mê hoặc về cuộc sống và sự đóng góp của một thiên tài điện học, với những cuộc phiêu lưu và sự sáng tạo độc đáo.",
+            "categoryId": {
+                "$oid": "64848ece280bec1eab040512"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:21:54.731Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:21:54.731Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e42e005ebb3078f46abc"
+            },
+            "name": "Chưa Kịp Lớn Đã Trưởng Thành",
+            "author": "Tớ Là Mây",
+            "price": 59250,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686561840/ECMA/imfiih5wckeu1xrclrdq.jpg",
+            "quantity": 30,
+            "description": "Cuốn sách đầy cảm xúc về những hành trình trưởng thành của tuổi trẻ, khám phá thế giới và tìm kiếm bản thân thông qua những trải nghiệm đáng nhớ",
+            "categoryId": {
+                "$oid": "64848ab9280bec1eab0404ff"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:23:58.346Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:23:58.346Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e46d005ebb3078f46ac3"
+            },
+            "name": "Đắc Nhân Tâm",
+            "author": "Dale Carnegie",
+            "price": 64500,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686561903/ECMA/stqcywsa2xn9xhhhmnra.jpg",
+            "quantity": 93,
+            "description": "Cuốn sách kinh điển về nghệ thuật giao tiếp và tạo mối quan hệ thành công, cung cấp nguyên tắc và kỹ năng giúp bạn đạt được sự thành công và hạnh phúc trong cuộc sống",
+            "categoryId": {
+                "$oid": "64848da0280bec1eab04050f"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:25:01.618Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:25:01.618Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e4e1005ebb3078f46aca"
+            },
+            "name": "Đất Rừng Phương Nam",
+            "author": "Đoàn Giỏi",
+            "price": 56700,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686562017/ECMA/yblztcm031vcnpbfxtao.jpg",
+            "quantity": 17,
+            "description": "Bức tranh chân thực và sâu lắng về cuộc sống, tình yêu và những trăn trở của con người trong vùng đất rừng đầy huyền bí và cám dỗ.",
+            "categoryId": {
+                "$oid": "647f07afda34ec152026462f"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:26:57.353Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:26:57.353Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e5cd005ebb3078f46ad1"
+            },
+            "name": "Điệp Viên Hoàn Hảo X6 ",
+            "author": "Larry Berman",
+            "price": 168300,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686562255/ECMA/q7b2f567e2lnsq21a6kt.jpg",
+            "quantity": 80,
+            "description": "Truyện hành động đầy căng thẳng với những màn đấu trí, hiệp sĩ bí ẩn X6 sẽ đưa bạn vào thế giới gián điệp đầy phiêu lưu và sự giải mã.",
+            "categoryId": {
+                "$oid": "64848ece280bec1eab040512"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:30:53.780Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:30:53.780Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e635005ebb3078f46ae0"
+            },
+            "name": "Đội Nhóm Tuyệt Đỉnh",
+            "author": "Robert",
+            "price": 118150,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686562358/ECMA/pwhzlbndsfhcomadqdf6.jpg",
+            "quantity": 16,
+            "description": "Cuốn sách kinh doanh và lãnh đạo đầy cảm hứng, truyền động lực và chia sẻ chiến lược thành công từ những đội nhóm xuất sắc nhất.",
+            "categoryId": {
+                "$oid": "64848cd0280bec1eab040509"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:32:37.682Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:32:37.682Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e67d005ebb3078f46ae7"
+            },
+            "name": "Giải Thích Ngữ Pháp Tiếng Anh ",
+            "author": "Mai Lan Hương, Hà Thanh Uyên",
+            "price": 165000,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686562431/ECMA/xwu3niymsp1nucdyexvj.jpg",
+            "quantity": 22,
+            "description": "ài liệu hữu ích giúp hiểu rõ và áp dụng ngữ pháp tiếng Anh một cách dễ dàng và chính xác, là người bạn đồng hành đáng tin cậy trong việc học ngôn ngữ.",
+            "categoryId": {
+                "$oid": "64848f78280bec1eab040515"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:33:49.696Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:33:49.696Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e703005ebb3078f46aee"
+            },
+            "name": "Giáo Trình Hán Ngữ ",
+            "author": "Dương Ký Châu, Đại Học Ngô",
+            "price": 51000,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686562565/ECMA/hxuefn14m81ljlw0nkca.jpg",
+            "quantity": 7,
+            "description": "Bước vào hành trình khám phá tiếng Hán, từ cơ bản đến nâng cao, với phương pháp học hiệu quả và tài liệu đa dạng, giúp bạn làm chủ ngôn ngữ Trung Quốc.",
+            "categoryId": {
+                "$oid": "64848f78280bec1eab040515"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:36:03.852Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:36:03.852Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e761005ebb3078f46af5"
+            },
+            "name": "Hoàng Tử Bé",
+            "author": "Antoine De Saint-Exupéry",
+            "price": 24500,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686562660/ECMA/gtywma2bpctofkga4abc.jpg",
+            "quantity": 94,
+            "description": "Tác phẩm vĩ đại của Antoine de Saint-Exupéry, mang thông điệp về tình yêu, trách nhiệm và ý nghĩa của cuộc sống qua một câu chuyện đầy sâu sắc và mơ mộng",
+            "categoryId": {
+                "$oid": "647f07afda34ec152026462f"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:37:37.625Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:37:37.625Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e7f7005ebb3078f46afc"
+            },
+            "name": "Kể Chuyện Cuộc Đời Các Thiên Tài: Leonardo Da Vinci - Thiên Tài Toàn Năng",
+            "author": "Rasmus Hoài Nam",
+            "price": 33000,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686562810/ECMA/e4jldyaob5n9zqfj0dmd.jpg",
+            "quantity": 43,
+            "description": "Hành trình khám phá sự sáng tạo và tài năng phi thường của một trong những nhân vật vĩ đại nhất trong lịch sử nghệ thuật và khoa học.",
+            "categoryId": {
+                "$oid": "64848ece280bec1eab040512"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:40:07.783Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:40:07.783Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e83f005ebb3078f46b03"
+            },
+            "name": "Khéo Ăn Nói Sẽ Có Được Thiên Hạ",
+            "author": "Trúc Nhã",
+            "price": 84500,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686562880/ECMA/ivy7cppbupolrwg6o4pj.jpg",
+            "quantity": 28,
+            "description": "Hướng dẫn cung cấp kỹ năng giao tiếp, thuyết phục và ảnh hưởng mạnh mẽ, giúp bạn thành công trong công việc và xây dựng mối quan hệ tốt.",
+            "categoryId": {
+                "$oid": "64848da0280bec1eab04050f"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:41:19.112Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:41:19.112Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e8a2005ebb3078f46b0a"
+            },
+            "name": "Làm Sạch Tâm Hồn - Các Bài Tập Thiền",
+            "author": "Nishi Katsuzo",
+            "price": 48300,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686562980/ECMA/yqsjjpmcinthfvhtbpyu.jpg",
+            "quantity": 50,
+            "description": "Hướng dẫn dẫn dắt bạn vào hành trình bình an và làm sạch tâm hồn thông qua các bài tập thiền, mang lại sự thư thái và sự tỉnh táo tinh thần.",
+            "categoryId": {
+                "$oid": "64848ece280bec1eab040512"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:42:58.422Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:42:58.422Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486e9ff005ebb3078f46b1f"
+            },
+            "name": "Nhà Giả Kim",
+            "author": "Paulo Coelho",
+            "price": 63200,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686564507/Nh%C3%A0_Gi%E1%BA%A3_Kim_i3vcl4.jpg",
+            "quantity": 11,
+            "description": "Cuốn tiểu thuyết kinh điển về sự truy tìm ý nghĩa cuộc sống, tự tìm kiếm và chuyển hóa bản thân, kết hợp giữa triết học và phiêu lưu, mang đến sự cảm nhận sâu sắc về sự trường tồn và hi vọng.",
+            "categoryId": {
+                "$oid": "64848ab9280bec1eab0404ff"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:48:47.052Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:48:47.052Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486ea55005ebb3078f46b26"
+            },
+            "name": "Nhật Ký Chú Bé Nhút Nhát",
+            "author": "Tom Fletcher, Dougie Poynter",
+            "price": 38500,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686563416/ECMA/nqyyct75609kd52bhdhk.jpg",
+            "quantity": 62,
+            "description": "Trải nghiệm tâm lý đằm thắm và cảm động qua nhật ký của một cậu bé nhút nhát, mang đến thông điệp về sự tự tin, lòng nhân ái và khám phá bản thân.",
+            "categoryId": {
+                "$oid": "647f07afda34ec152026462f"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:50:13.738Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:50:13.738Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486eb07005ebb3078f46b2d"
+            },
+            "name": "Sống Mạo Hiểm Một Cách Cẩn Thận",
+            "author": "Maye Musk",
+            "price": 119250,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686563593/ECMA/clxsj1pxtv3vtppoxulf.jpg",
+            "quantity": 68,
+            "description": " Hướng dẫn về sự táo bạo và tỉnh táo trong cuộc sống, khám phá cách sống đầy đam mê và tận hưởng những thách thức với sự cẩn trọng và sự chuẩn bị.",
+            "categoryId": {
+                "$oid": "64848ece280bec1eab040512"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:53:11.860Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:53:11.860Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486eb89005ebb3078f46b34"
+            },
+            "name": "Tôi Đã Trở Thành Thương Gia Vui Vẻ Và Sung Túc - Kinh Nghiệm Buôn Bán Hàng Trung Quốc",
+            "author": "Jenny Phương",
+            "price": 63720,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686563722/ECMA/v0xzvwgwenw0tqprfhf4.jpg",
+            "quantity": 42,
+            "description": "Chia sẻ bí quyết và kinh nghiệm thành công trong kinh doanh với Trung Quốc, giúp bạn trở thành một thương gia vui vẻ và đạt được sự thịnh vượng.",
+            "categoryId": {
+                "$oid": "64848cd0280bec1eab040509"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:55:21.210Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:55:21.210Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486ebd3005ebb3078f46b3b"
+            },
+            "name": "Từ Điển Tiếng “Em” ",
+            "author": "Khotudien",
+            "price": 55200,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686563796/ECMA/qb6psaclrxjb8bp4fdin.jpg",
+            "quantity": 41,
+            "description": "Bộ sưu tập các từ và cụm từ tình yêu, dành riêng cho người yêu, mang đến sự lãng mạn và tình cảm sâu sắc trong việc diễn đạt tình yêu và quan tâm.",
+            "categoryId": {
+                "$oid": "64848ab9280bec1eab0404ff"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:56:35.155Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:56:35.155Z"
+            }
+        },
+        {
+            "_id": {
+                "$oid": "6486ec94005ebb3078f46b49"
+            },
+            "name": "Thuật Thao Túng - Góc Tối Ẩn Sau Mỗi Câu Nói",
+            "author": "Wladislaw Jachtchenko",
+            "price": 104250,
+            "image": "https://res.cloudinary.com/dzo94imrh/image/upload/v1686563990/ECMA/piifdnylx2fci7w1bg2i.jpg",
+            "quantity": 40,
+            "description": "Sách khám phá những chiêu thức lôi kéo, thuyết phục và thao túng ngôn ngữ, giúp bạn hiểu rõ hơn về quyền lực và tác động của từ ngữ trong giao tiếp.\"",
+            "categoryId": {
+                "$oid": "64848da0280bec1eab04050f"
+            },
+            "createdAt": {
+                "$date": "2023-06-12T09:59:48.487Z"
+            },
+            "updatedAt": {
+                "$date": "2023-06-12T09:59:48.487Z"
+            }
+        }
+    ],
+    "categories": [
+        {
+            "_id": {
+                "$oid": "647f07afda34ec152026462f"
+            },
+            "name": "Thiếu nhi ",
+            "products": [
+                {
+                    "$oid": "64808eef937f6a57e347a6b7"
+                },
+                {
+                    "$oid": "64808f44937f6a57e347a6bd"
+                },
+                {
+                    "$oid": "6481dac3663af46a90abc620"
+                },
+                {
+                    "$oid": "6485422ead694790ef8507d5"
+                },
+                {
+                    "$oid": "6486dcd9005ebb3078f46a68"
+                },
+                {
+                    "$oid": "6486e0d6005ebb3078f46a95"
+                },
+                {
+                    "$oid": "6486e4e1005ebb3078f46aca"
+                },
+                {
+                    "$oid": "6486e761005ebb3078f46af5"
+                },
+                {
+                    "$oid": "6486ea55005ebb3078f46b26"
+                },
+                {
+                    "$oid": "6487d8c5bb7b81d8931961b3"
+                }
+            ]
+        },
+        {
+            "_id": {
+                "$oid": "64848ab9280bec1eab0404ff"
+            },
+            "name": "Văn Học",
+            "products": [
+                {
+                    "$oid": "6484978c30771372827a2768"
+                },
+                {
+                    "$oid": "648536f6ad694790ef850773"
+                },
+                {
+                    "$oid": "6486e04d005ebb3078f46a8e"
+                },
+                {
+                    "$oid": "6486e25f005ebb3078f46aaa"
+                },
+                {
+                    "$oid": "6486e42e005ebb3078f46abc"
+                },
+                {
+                    "$oid": "6486e9ff005ebb3078f46b1f"
+                },
+                {
+                    "$oid": "6486ebd3005ebb3078f46b3b"
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": {
+                "$oid": "64848cd0280bec1eab040509"
+            },
+            "name": "Kinh Tế",
+            "products": [
+                {
+                    "$oid": "6484a3c130771372827a27c3"
+                },
+                {
+                    "$oid": "64854067ad694790ef8507b4"
+                },
+                {
+                    "$oid": "648541caad694790ef8507ca"
+                },
+                {
+                    "$oid": "6485906a04d36c20fb3cf56d"
+                },
+                {
+                    "$oid": "648594b104d36c20fb3cf59a"
+                },
+                {
+                    "$oid": "6486dee1005ebb3078f46a77"
+                },
+                {
+                    "$oid": "6486e1a4005ebb3078f46a9c"
+                },
+                {
+                    "$oid": "6486e635005ebb3078f46ae0"
+                },
+                {
+                    "$oid": "6486e90b005ebb3078f46b11"
+                },
+                {
+                    "$oid": "6486eb89005ebb3078f46b34"
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": {
+                "$oid": "64848da0280bec1eab04050f"
+            },
+            "name": "Tâm Lý - Kĩ Năng Sống",
+            "products": [
+                {
+                    "$oid": "648541b5ad694790ef8507c3"
+                },
+                {
+                    "$oid": "64858ba804d36c20fb3cf55e"
+                },
+                {
+                    "$oid": "64858bf404d36c20fb3cf565"
+                },
+                {
+                    "$oid": "64859bc404d36c20fb3cf5db"
+                },
+                {
+                    "$oid": "64859ea204d36c20fb3cf608"
+                },
+                {
+                    "$oid": "64859fbb04d36c20fb3cf622"
+                },
+                {
+                    "$oid": "6486dfe5005ebb3078f46a87"
+                },
+                {
+                    "$oid": "6486e206005ebb3078f46aa3"
+                },
+                {
+                    "$oid": "6486e46d005ebb3078f46ac3"
+                },
+                {
+                    "$oid": "6486e83f005ebb3078f46b03"
+                },
+                {
+                    "$oid": "6486ec94005ebb3078f46b49"
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": {
+                "$oid": "64848ece280bec1eab040512"
+            },
+            "name": "Tiểu Sử - Hồi Ký",
+            "products": [
+                {
+                    "$oid": "6486e3b2005ebb3078f46ab5"
+                },
+                {
+                    "$oid": "6486e5cd005ebb3078f46ad1"
+                },
+                {
+                    "$oid": "6486e7f7005ebb3078f46afc"
+                },
+                {
+                    "$oid": "6486e8a2005ebb3078f46b0a"
+                },
+                {
+                    "$oid": "6486eb07005ebb3078f46b2d"
+                }
+            ],
+            "__v": 0
+        },
+        {
+            "_id": {
+                "$oid": "64848f78280bec1eab040515"
+            },
+            "name": "Ngoại Ngữ",
+            "products": [
+                {
+                    "$oid": "6486df63005ebb3078f46a80"
+                },
+                {
+                    "$oid": "6486e67d005ebb3078f46ae7"
+                },
+                {
+                    "$oid": "6486e703005ebb3078f46aee"
+                },
+                {
+                    "$oid": "6486e982005ebb3078f46b18"
+                },
+                {
+                    "$oid": "6486ec35005ebb3078f46b42"
+                },
+                {
+                    "$oid": "6487d889bb7b81d8931961ac"
+                }
+            ],
+            "__v": 0
+        }
+    ],
+    "order": []
+}
