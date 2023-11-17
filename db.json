@@ -2,16 +2,6 @@
     "users": [
         {
             "_id": {
-                "$oid": "6482a4bb61d613a005ab0a8f"
-            },
-            "name": "Thieuz",
-            "email": "thieu12hn@gmail.com",
-            "password": "$2a$10$sLQ6RdTEjdiHHGZKaMfUu.gpjNnwgUmkRm3/mXhdQIPH9grKeP6TO",
-            "role": "admin",
-            "__v": 0
-        },
-        {
-            "_id": {
                 "$oid": "6530c03f4970d6e65b7a3cd8"
             },
             "name": "Tuấn",
@@ -755,5 +745,8 @@
             "__v": 0
         }
     ],
-    "order": []
+    "order": [],
+    "comments": [
+        {}
+    ]
 }

@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "content": "hay",
+      "createdAt": "2023-11-17 11:35:19"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
