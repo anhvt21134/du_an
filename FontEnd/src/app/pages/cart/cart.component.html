@@ -22,10 +22,12 @@
                     <td><img style="width: 150px; height: auto;" src="{{cart.image}}" alt=""></td>
                     <td>{{cart.price}}</td>
                     <td>
-                        <button (click)="giam(i,cart.quantity)">-</button>
+                        <button (click)="giam(i,cart.quantity)"
+                            style="background-color: #4CAF50; width: 40px;">-</button>
                         <input class="input-number" type="number" [value]="cart.quantity"
                             (change)="updateQuantity(i, $event)">
-                        <button (click)="tang(i,cart.quantity)">+</button>
+                        <button (click)="tang(i,cart.quantity)"
+                            style="background-color: #4CAF50; width: 40px; ">+</button>
                     </td>
                     <td>{{subtotal(cart)}}</td>
                     <td><button type="button" class="btn btn-outline-danger" (click)="removeCart(i)">Xóa</button></td>

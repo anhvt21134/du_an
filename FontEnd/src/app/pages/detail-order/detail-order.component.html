@@ -1,8 +1,8 @@
-<div style="margin-top: 400px;">
-    <h1>Trang chi tiết đơn hang</h1>
+<div style="margin-top: 200px; margin-left: 500px;">
+    <h1>Trang chi tiết đơn hàng</h1>
 </div>
 <div *ngIf="detailOrder.length" class="orderbody">
-    <h1>Trang chi tiết đơn hàng</h1>
+
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12">
@@ -67,6 +67,6 @@
 </div>
 
 <div *ngIf="detailOrder.length === 0">
-    <h1>Bạn đéo có đơn hàng nào</h1>
-    <a routerLink="/"> Quay lại để mua hàng</a>
+    <h1 style="margin-left: 450px;">Bạn chưa có đơn hàng nào</h1>
+    <a routerLink="/" style="margin-left: 650px;"> Quay lại để mua hàng</a>
 </div>
